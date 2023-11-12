@@ -67,7 +67,7 @@ app.layout = html.Div([html.Div([dbc.Container(
     [
         dbc.Row(
             [
-                # dbc.Col(html.Div(dcc.Graph(id='graph1'))),
+                # dbc.Col(html.Div(dcc.Loading([  dcc.Graph(id='graph1')])   )    ),
                 dbc.Col(html.Div(dcc.Graph(id="graph2"))),
                 dbc.Col(html.Div(dcc.Graph(id="graph3"))),
                 dbc.Col(html.Div(dcc.Graph(id="graph4")))
