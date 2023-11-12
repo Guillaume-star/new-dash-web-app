@@ -27,4 +27,3 @@ Werkzeug==3.0.1
 zipp==3.17.0
 pandas 
 dash-bootstrap-components
-gunicorn==20.0.4
