@@ -1,3 +1,4 @@
+import dash
 from dash import Dash, html, dcc, callback, Output, Input
 import plotly.express as px
 import pandas as pd
@@ -22,4 +23,4 @@ def update_graph(value):
     return px.line(dff, x='year', y='pop')
 
 if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0', port=5000)
+    app.run()
