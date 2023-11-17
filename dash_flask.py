@@ -1,6 +1,6 @@
 from dash.dependencies import Output, Input, State
 import dash_bootstrap_components as dbc
-from dash import dcc
+import dash_core_components as dcc
 from dash import html
 import plotly.express as px
 from flask import Flask
