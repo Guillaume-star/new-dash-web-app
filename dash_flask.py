@@ -4,6 +4,7 @@ import dash_bootstrap_components as dbc
 import dash_core_components as dcc
 import dash_html_components as html
 import plotly.express as px
+import plotly.graph_objects as go
 from flask import Flask
 import pandas as pd
 import dash
@@ -157,7 +158,7 @@ def make_graph(state):
     fig2.update_layout(plot_bgcolor="#125771")
     fig2.update_traces(line=dict(color='#E4FA06', width=4))
     fig2.update_layout(margin=dict(l=0, r=5, b=0, t=35, pad=0))
-    fig2.update_traces(marker=dict(size=12))
+    #fig2.update_traces(marker=dict(size=12))
     graph_list.append(fig2)
 
     fig3 = px.line(
@@ -172,7 +173,7 @@ def make_graph(state):
     fig3.update_layout(plot_bgcolor="#125771")
     fig3.update_traces(line=dict(color='#FBFCFC', width=4))
     fig3.update_layout(margin=dict(l=0, r=5, b=0, t=35, pad=0))
-    fig3.update_traces(marker=dict(size=12))
+    #fig3.update_traces(marker=dict(size=12))
     graph_list.append(fig3)
 
     fig4 = px.line(
@@ -186,7 +187,7 @@ def make_graph(state):
             'Child tax credit Number of returns': ''})
     fig4.update_layout(plot_bgcolor="#125771")
     fig4.update_traces(line=dict(color='#06EFFA', width=4))
-    fig4.update_traces(marker=dict(size=12))
+    #fig4.update_traces(marker=dict(size=12))
     fig4.update_layout(margin=dict(l=0, r=5, b=0, t=35, pad=0))
     graph_list.append(fig4)
     return fig2, fig3, fig4
