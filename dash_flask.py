@@ -63,14 +63,14 @@ app.layout = html.Div([html.Div([dbc.Container(
     ], style={'color': 'Gold', 'font-size': 20}),
     html.Div(
     [
-        dbc.Row(
+        dbc.Row(dcc.Loading(children=
             [
                 # dbc.Col(html.Div(dcc.Graph(id='graph1'))),
                 dbc.Col(html.Div(dcc.Graph(id="graph2"))),
                 dbc.Col(html.Div(dcc.Graph(id="graph3"))),
                 dbc.Col(html.Div(dcc.Graph(id="graph4")))
             ]
-        ),
+        )),
 
     ]
 )
