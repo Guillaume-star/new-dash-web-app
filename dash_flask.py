@@ -11,7 +11,7 @@ import pandas as pd
 
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/gapminder_unfiltered.csv')
 
-app = Dash(__name__)
+app = dash.Dash(__name__)
 server = app.server
 
 app.layout = html.Div([
